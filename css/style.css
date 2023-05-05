@@ -1,0 +1,32 @@
+body {
+  background: linear-gradient(90deg, rgb(92, 2, 145) 8%, rgb(138, 15, 198) 84%, rgb(148, 0, 255) 100%, rgb(161, 26, 194) 100%);
+}
+body .item {
+  border: 2px solid black;
+  width: 100px;
+  height: 200px;
+  color: white;
+}
+body li::marker {
+  color: purple;
+}
+body .menu {
+  display: flex;
+  flex-direction: column;
+  inline-size: 100px;
+  border: 1px solid gray;
+  padding: 10px;
+  align-items: center;
+  color: white;
+  -webkit-text-decoration: dotted;
+          text-decoration: dotted;
+  margin-left: 100px;
+  position: absolute;
+}
+body .menu:hover li {
+  display: flex;
+}
+body .menu li {
+  display: none;
+  overflow: hidden;
+}

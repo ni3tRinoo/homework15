@@ -1,0 +1,43 @@
+body{
+    background: linear-gradient(
+        90deg,
+        rgb(92, 2, 145) 8%,
+        rgba(138, 15, 198, 1) 84%,
+        rgba(148, 0, 255, 1) 100%,
+        rgba(161, 26, 194, 1) 100%
+      );
+
+      .item {
+        border: 2px solid black;
+        width: 100px;
+        height: 200px;
+        color: white;
+      }
+      
+      li::marker {
+        color: purple;
+      }
+      
+      .menu {
+        display: flex;
+        flex-direction: column;
+        inline-size: 100px;
+        border: 1px solid gray;
+        padding: 10px;
+        align-items: center;
+        color: white;
+        text-decoration: dotted;
+        margin-left: 100px;
+        position: absolute;
+      }
+      
+      .menu:hover li {
+        display: flex;
+      }
+      
+      .menu li {
+        display: none;
+        overflow: hidden;
+      }
+      
+}
